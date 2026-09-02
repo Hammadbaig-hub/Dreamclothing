@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Dream Clothing — Wear Your Dream",
+            "heading": "Handmade Embroidery, Woven With Love",
             "heading_size": "hxl"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Premium unstitched, stitched & embroidered women's wear",
+            "text": "Authentic Pakistani hand-embroidered suits, crafted by skilled artisans",
             "text_style": "subtitle"
           }
         },
@@ -50,6 +50,15 @@
     "trust_bar": {
       "type": "multicolumn",
       "blocks": {
+        "handmade": {
+          "type": "column",
+          "settings": {
+            "title": "🧵 100% Handmade Embroidery",
+            "text": "<p>Every stitch hand-crafted by skilled Pakistani artisans</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "delivery": {
           "type": "column",
           "settings": {
@@ -76,22 +85,13 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "support": {
-          "type": "column",
-          "settings": {
-            "title": "💬 24/7 Support",
-            "text": "<p>We're here to help anytime</p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
+        "handmade",
         "delivery",
         "cod",
-        "returns",
-        "support"
+        "returns"
       ],
       "settings": {
         "title": "",
@@ -137,7 +137,7 @@
         "cat-4"
       ],
       "settings": {
-        "title": "Shop by Category",
+        "title": "Shop by Embroidery Style",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 4,
@@ -152,7 +152,7 @@
     "trending_now": {
       "type": "featured-collection",
       "settings": {
-        "title": "Trending Now",
+        "title": "Handpicked Embroidery Pieces",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -183,21 +183,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Our Story",
+            "heading": "The Art of Hand Embroidery",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Dream Clothing started as a small online store with one goal: to bring premium, on-trend women's fashion to every home in Pakistan. Every piece is chosen with care — from unstitched fabric to fully embroidered suits — so you always look and feel your best.</p>",
+            "text": "<p>Dream Clothing works directly with skilled Pakistani artisans who hand-embroider every suit, thread by thread, using techniques passed down through generations. No machines, no shortcuts — just genuine craftsmanship, delivered to every home in Pakistan.</p>",
             "text_style": "body"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Learn More",
+            "button_label": "Discover Our Craft",
             "button_link": "",
             "button_style_secondary": true
           }
@@ -281,7 +281,7 @@
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Sign up for early access to new arrivals, exclusive discounts & sale alerts</p>"
+            "text": "<p>Sign up for early access to new hand-embroidered collections, exclusive discounts & sale alerts</p>"
           }
         },
         "email_form": {

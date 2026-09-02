@@ -40,12 +40,22 @@
             "color_scheme": "scheme-4",
             "link": "shopify://collections/all"
           }
+        },
+        "announcement-bar-3": {
+          "type": "announcement",
+          "settings": {
+            "text": "🧵 100% Hand-Embroidered by Pakistani Artisans",
+            "text_alignment": "center",
+            "color_scheme": "scheme-4",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
         "announcement-bar-1",
-        "announcement-bar-2"
+        "announcement-bar-2",
+        "announcement-bar-3"
       ]
     },
     "header": {
