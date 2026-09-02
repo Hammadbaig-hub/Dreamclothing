@@ -126,6 +126,13 @@
   }
 }
 
+@media screen and (max-width: 749px) {
+  .background-none .grid--1-col-tablet-down .multicolumn-list__item:not(:first-child) {
+    padding-top: 2.4rem;
+    border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  }
+}
+
 @media screen and (min-width: 750px) {
   .multicolumn-list.slider {
     padding: 0;

@@ -53,7 +53,7 @@
         "handmade": {
           "type": "column",
           "settings": {
-            "title": "🧵 100% Handmade Embroidery",
+            "title": "100% Handmade Embroidery",
             "text": "<p>Every stitch hand-crafted by skilled Pakistani artisans</p>",
             "link_label": "",
             "link": ""
@@ -62,7 +62,7 @@
         "delivery": {
           "type": "column",
           "settings": {
-            "title": "🚚 Free Nationwide Delivery",
+            "title": "Free Nationwide Delivery",
             "text": "<p>Delivered to your doorstep anywhere in Pakistan</p>",
             "link_label": "",
             "link": ""
@@ -71,7 +71,7 @@
         "cod": {
           "type": "column",
           "settings": {
-            "title": "💵 Cash on Delivery",
+            "title": "Cash on Delivery",
             "text": "<p>Pay when your order arrives</p>",
             "link_label": "",
             "link": ""
@@ -80,7 +80,7 @@
         "returns": {
           "type": "column",
           "settings": {
-            "title": "↩️ Easy Exchange",
+            "title": "Easy Exchange",
             "text": "<p>Hassle-free exchange within 7 days</p>",
             "link_label": "",
             "link": ""
@@ -104,7 +104,7 @@
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-2",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 28
