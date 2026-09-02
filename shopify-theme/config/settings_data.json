@@ -9,71 +9,71 @@
           "settings": {
             "background": "#FFFFFF",
             "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
+            "text": "#241012",
+            "button": "#7A1F2B",
             "button_label": "#FFFFFF",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
+            "secondary_button_label": "#7A1F2B",
+            "shadow": "#241012"
           }
         },
         "scheme-2": {
           "settings": {
-            "background": "#F3F3F3",
+            "background": "#FBF3EC",
             "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
-            "button_label": "#F3F3F3",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
+            "text": "#2B1210",
+            "button": "#7A1F2B",
+            "button_label": "#FBF3EC",
+            "secondary_button_label": "#7A1F2B",
+            "shadow": "#2B1210"
           }
         },
         "scheme-3": {
           "settings": {
-            "background": "#242833",
+            "background": "#3A0F16",
             "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#000000",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
+            "text": "#F5E6D8",
+            "button": "#C9A24B",
+            "button_label": "#3A0F16",
+            "secondary_button_label": "#F5E6D8",
+            "shadow": "#000000"
           }
         },
         "scheme-4": {
           "settings": {
-            "background": "#121212",
+            "background": "#E1263C",
             "background_gradient": "",
             "text": "#FFFFFF",
             "button": "#FFFFFF",
-            "button_label": "#121212",
+            "button_label": "#E1263C",
             "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
+            "shadow": "#000000"
           }
         },
         "scheme-5": {
           "settings": {
-            "background": "#334FB4",
+            "background": "#C9A24B",
             "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#334FB4",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
+            "text": "#3A0F16",
+            "button": "#3A0F16",
+            "button_label": "#C9A24B",
+            "secondary_button_label": "#3A0F16",
+            "shadow": "#3A0F16"
           }
         }
       },
-      "type_header_font": "assistant_n4",
-      "heading_scale": 100,
-      "type_body_font": "assistant_n4",
+      "type_header_font": "playfair_display_n7",
+      "heading_scale": 110,
+      "type_body_font": "work_sans_n4",
       "body_scale": 100,
       "page_width": 1200,
       "spacing_sections": 0,
       "spacing_grid_horizontal": 8,
       "spacing_grid_vertical": 8,
       "animations_reveal_on_scroll": true,
-      "animations_hover_elements": "none",
+      "animations_hover_elements": "vertical-lift",
       "buttons_border_thickness": 1,
       "buttons_border_opacity": 100,
-      "buttons_radius": 0,
+      "buttons_radius": 6,
       "buttons_shadow_opacity": 0,
       "buttons_shadow_horizontal_offset": 0,
       "buttons_shadow_vertical_offset": 4,
@@ -98,7 +98,7 @@
       "card_color_scheme": "scheme-2",
       "card_border_thickness": 0,
       "card_border_opacity": 10,
-      "card_corner_radius": 0,
+      "card_corner_radius": 10,
       "card_shadow_opacity": 0,
       "card_shadow_horizontal_offset": 0,
       "card_shadow_vertical_offset": 4,
@@ -134,7 +134,7 @@
       "text_boxes_shadow_blur": 5,
       "media_border_thickness": 1,
       "media_border_opacity": 5,
-      "media_radius": 0,
+      "media_radius": 10,
       "media_shadow_opacity": 0,
       "media_shadow_horizontal_offset": 0,
       "media_shadow_vertical_offset": 4,
@@ -156,8 +156,8 @@
       "badge_corner_radius": 40,
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
-      "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_headline": "Dream Clothing — Online Store",
+      "brand_description": "<p>Premium unstitched, stitched and embroidered women's wear, delivered all over Pakistan.</p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",

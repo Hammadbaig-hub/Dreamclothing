@@ -2971,6 +2971,27 @@ details-disclosure > details {
   word-break: break-word;
 }
 
+.badge--sale-percent {
+  font-weight: 700;
+  animation: badgePulse 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .badge--sale-percent {
+    animation: none;
+  }
+}
+
+@keyframes badgePulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
 .gradient {
   background: rgb(var(--color-background));
   background: var(--gradient-background);

@@ -6,32 +6,40 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Dream Clothing — Wear Your Dream",
+            "heading_size": "hxl"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Premium unstitched, stitched & embroidered women's wear",
+            "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Shop New Arrivals",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_1": false,
+            "button_label_2": "Shop All",
+            "button_link_2": "shopify://collections/all",
+            "button_style_secondary_2": true
           }
         }
       },
       "block_order": [
         "heading",
+        "text",
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 50,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
         "mobile_content_alignment": "center",
@@ -39,11 +47,113 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
+    "trust_bar": {
+      "type": "multicolumn",
+      "blocks": {
+        "delivery": {
+          "type": "column",
+          "settings": {
+            "title": "🚚 Free Nationwide Delivery",
+            "text": "<p>Delivered to your doorstep anywhere in Pakistan</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "cod": {
+          "type": "column",
+          "settings": {
+            "title": "💵 Cash on Delivery",
+            "text": "<p>Pay when your order arrives</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "returns": {
+          "type": "column",
+          "settings": {
+            "title": "↩️ Easy Exchange",
+            "text": "<p>Hassle-free exchange within 7 days</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "support": {
+          "type": "column",
+          "settings": {
+            "title": "💬 24/7 Support",
+            "text": "<p>We're here to help anytime</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "delivery",
+        "cod",
+        "returns",
+        "support"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "shop_by_category": {
+      "type": "collection-list",
+      "blocks": {
+        "cat-1": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        },
+        "cat-2": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        },
+        "cat-3": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        },
+        "cat-4": {
+          "type": "featured_collection",
+          "settings": { "collection": "" }
+        }
+      },
+      "block_order": [
+        "cat-1",
+        "cat-2",
+        "cat-3",
+        "cat-4"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "trending_now": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Trending Now",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -55,21 +165,149 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "our_story": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Story",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dream Clothing started as a small online store with one goal: to bring premium, on-trend women's fashion to every home in Pakistan. Every piece is chosen with care — from unstitched fabric to fully embroidered suits — so you always look and feel your best.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "<p>\"Order received, I'm very happy with the quality. Thank you Dream Clothing!\"</p>",
+            "author_name": "Ayesha K.",
+            "author_location": "Verified Buyer, Lahore"
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "<p>\"Fabric quality is amazing and delivery was super fast. Highly recommended!\"</p>",
+            "author_name": "Sana M.",
+            "author_location": "Verified Buyer, Karachi"
+          }
+        },
+        "t3": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "<p>\"Exactly like the pictures. Will definitely order again.\"</p>",
+            "author_name": "Hira A.",
+            "author_location": "Verified Buyer, Islamabad"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "settings": {
+        "title": "Let Customers Speak For Us",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the Dream Clothing Family",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign up for early access to new arrivals, exclusive discounts & sale alerts</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form"
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "trust_bar",
+    "shop_by_category",
+    "trending_now",
+    "our_story",
+    "testimonials",
+    "newsletter"
   ]
 }
