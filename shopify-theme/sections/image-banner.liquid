@@ -136,16 +136,26 @@
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
-                <a
-                  {% if block.settings.button_link_1 == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link_1 }}"
-                  {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
-                >
-                  {{- block.settings.button_label_1 | escape -}}
-                </a>
+                {%- if block.settings.button_style_liquid_glass_1 -%}
+                  {%- render 'liquid-glass-button',
+                    id: section.id,
+                    label: block.settings.button_label_1,
+                    url: block.settings.button_link_1,
+                    size: 'lg',
+                    light_text: true
+                  -%}
+                {%- else -%}
+                  <a
+                    {% if block.settings.button_link_1 == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ block.settings.button_link_1 }}"
+                    {% endif %}
+                    class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  >
+                    {{- block.settings.button_label_1 | escape -}}
+                  </a>
+                {%- endif -%}
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
                 <a
@@ -461,6 +471,13 @@
           "id": "button_style_secondary_1",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_liquid_glass_1",
+          "default": false,
+          "label": "Use liquid glass style",
+          "info": "Frosted glass effect. Overrides the secondary style setting above for this button."
         },
         {
         "type": "header",

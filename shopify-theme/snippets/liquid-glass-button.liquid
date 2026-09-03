@@ -1,0 +1,65 @@
+{%- comment -%}
+  Renders a frosted "liquid glass" button: a blurred, light-refracting pill
+  over whatever sits behind it (image, gradient, color). Recreates the visual
+  effect of the React/shadcn LiquidButton component using a scoped SVG
+  displacement filter + backdrop-filter, so it runs natively in Liquid with no
+  React/Tailwind/build step.
+
+  Accepts:
+    id          (required) unique string so multiple instances on one page
+                don't share/collide on the same SVG filter id
+    label       (required) button text
+    url         (optional) link href; renders as <a>. If blank, renders as a
+                disabled-looking link, matching Dawn's own button placeholder pattern
+    size        (optional) 'sm' | 'default' | 'lg' — default: 'default'
+    light_text  (optional) true to use light/cream text, for use over photos
+{%- endcomment -%}
+{{ 'component-liquid-glass-button.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign glass_id = id | default: 'liquid-glass'
+  assign glass_size = size | default: 'default'
+-%}
+
+<div class="liquid-glass-btn liquid-glass-btn--{{ glass_size }}{% if light_text %} liquid-glass-btn--light-text{% endif %}">
+  <a
+    {% if url == blank %}
+      role="link" aria-disabled="true"
+    {% else %}
+      href="{{ url }}"
+    {% endif %}
+    class="liquid-glass-btn__el"
+  >
+    <span class="liquid-glass-btn__shadow" aria-hidden="true"></span>
+    <span
+      class="liquid-glass-btn__glass"
+      aria-hidden="true"
+      style="backdrop-filter: url('#liquid-glass-filter-{{ glass_id }}'); -webkit-backdrop-filter: blur(6px);"
+    ></span>
+    <span class="liquid-glass-btn__label">{{ label | escape }}</span>
+  </a>
+</div>
+
+<svg class="liquid-glass-btn__svg-defs" aria-hidden="true" focusable="false">
+  <filter
+    id="liquid-glass-filter-{{ glass_id }}"
+    x="-20%"
+    y="-20%"
+    width="140%"
+    height="140%"
+    color-interpolation-filters="sRGB"
+  >
+    <feTurbulence type="fractalNoise" baseFrequency="0.01 0.04" numOctaves="1" seed="2" result="turbulence" />
+    <feGaussianBlur in="turbulence" stdDeviation="2" result="blurredNoise" />
+    <feDisplacementMap
+      in="SourceGraphic"
+      in2="blurredNoise"
+      scale="45"
+      xChannelSelector="R"
+      yChannelSelector="G"
+      result="displaced"
+    />
+    <feGaussianBlur in="displaced" stdDeviation="3" result="finalBlur" />
+    <feComposite in="finalBlur" in2="finalBlur" operator="over" />
+  </filter>
+</svg>
