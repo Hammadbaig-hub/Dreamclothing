@@ -19,8 +19,13 @@
 
 .trust-badge__icon {
   display: flex;
-  width: 3.6rem;
-  height: 3.6rem;
+  align-items: center;
+  justify-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  border: 0.1rem solid #c9a24b;
+  padding: 1.4rem;
 }
 
 .trust-badge__icon svg {

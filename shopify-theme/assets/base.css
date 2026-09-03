@@ -870,6 +870,16 @@ summary::-webkit-details-marker {
   margin-top: 0;
 }
 
+.title-wrapper--no-top-margin .title::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.2rem;
+  margin-top: 1.4rem;
+  margin-inline: auto;
+  background: #c9a24b;
+}
+
 .title-wrapper--no-top-margin > .title {
   margin-top: 0;
 }
