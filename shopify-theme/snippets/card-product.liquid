@@ -573,6 +573,16 @@
               </span>
             {%- endif -%}
           </div>
+          <button
+            type="button"
+            class="card__wishlist-btn"
+            data-wishlist-toggle
+            data-product-id="{{ card_product.id }}"
+            aria-label="Add {{ card_product.title | escape }} to wishlist"
+            aria-pressed="false"
+          >
+            <span class="svg-wrapper">{{ 'icon-heart.svg' | inline_asset_content }}</span>
+          </button>
         </div>
       </div>
     </div>

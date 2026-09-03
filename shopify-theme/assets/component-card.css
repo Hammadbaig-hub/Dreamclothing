@@ -296,6 +296,40 @@
   width: 100%;
 }
 
+.card__wishlist-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.85);
+  color: #241012;
+  transition: transform 200ms ease, color 200ms ease;
+}
+
+.card__wishlist-btn:hover {
+  transform: scale(1.08);
+}
+
+.card__wishlist-btn .icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #241012;
+  transition: fill 200ms ease;
+}
+
+.card__wishlist-btn.is-active .icon {
+  fill: #9c3a4c;
+}
+
 .card__inner:not(.ratio) > .card__content {
   height: 100%;
 }

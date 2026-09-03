@@ -36,9 +36,11 @@
         "button"
       ],
       "settings": {
-        "static_image": "hero-embroidery-1.jpg",
-        "static_image_alt": "Hand-embroidered traditional blouse detail",
-        "image_overlay_opacity": 50,
+        "static_image": "hero-festive-1.jpg",
+        "static_image_alt": "Women in embroidered Pakistani outfits celebrating amid marigold garlands",
+        "static_image_width": 1920,
+        "static_image_height": 1080,
+        "image_overlay_opacity": 30,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -55,23 +57,23 @@
       "blocks": {
         "handmade": {
           "type": "badge",
-          "settings": { "icon": "icon-heart.svg", "label": "Handmade Embroidery" }
+          "settings": { "icon": "icon-heart.svg", "label": "Handmade Embroidery", "subtext": "Crafted by Pakistani artisans" }
         },
         "delivery": {
           "type": "badge",
-          "settings": { "icon": "icon-truck.svg", "label": "Nationwide Delivery" }
+          "settings": { "icon": "icon-truck.svg", "label": "Nationwide Delivery", "subtext": "Delivered across Pakistan" }
         },
         "cod": {
           "type": "badge",
-          "settings": { "icon": "icon-price-tag.svg", "label": "Cash On Delivery" }
+          "settings": { "icon": "icon-price-tag.svg", "label": "Cash On Delivery", "subtext": "Pay when it arrives" }
         },
         "returns": {
           "type": "badge",
-          "settings": { "icon": "icon-return.svg", "label": "Easy Exchange" }
+          "settings": { "icon": "icon-return.svg", "label": "Easy Exchange", "subtext": "Within 7 days of delivery" }
         },
         "quality": {
           "type": "badge",
-          "settings": { "icon": "icon-checkmark.svg", "label": "Quality Guaranteed" }
+          "settings": { "icon": "icon-checkmark.svg", "label": "Quality Guaranteed", "subtext": "Checked before dispatch" }
         }
       },
       "block_order": [
@@ -132,13 +134,13 @@
     "trending_now": {
       "type": "featured-collection",
       "settings": {
-        "title": "Handpicked Embroidery Pieces",
+        "title": "Top Picks For You",
         "heading_size": "h1",
-        "description": "",
-        "show_description": false,
+        "description": "<p>We've handpicked the styles we know you'll love. Explore what's trending now.</p>",
+        "show_description": true,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 6,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "full_width": false,
@@ -155,6 +157,34 @@
         "columns_mobile": "2",
         "padding_top": 40,
         "padding_bottom": 32
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestsellers",
+        "heading_size": "h1",
+        "description": "<p>Discover this season's favorites and refresh your style with looks you'll wear on repeat.</p>",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-2",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "padding_top": 32,
+        "padding_bottom": 40
       }
     },
     "our_story": {
@@ -286,6 +316,7 @@
     "trust_bar",
     "shop_by_category",
     "trending_now",
+    "bestsellers",
     "our_story",
     "testimonials",
     "newsletter"

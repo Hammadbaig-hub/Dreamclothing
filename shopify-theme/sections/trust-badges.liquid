@@ -30,6 +30,9 @@
         >
           <span class="trust-badge__icon">{{ block.settings.icon | inline_asset_content }}</span>
           <span class="trust-badge__label">{{ block.settings.label | escape }}</span>
+          {%- if block.settings.subtext != blank -%}
+            <span class="trust-badge__subtext">{{ block.settings.subtext | escape }}</span>
+          {%- endif -%}
         </li>
       {%- endfor -%}
     </ul>
@@ -142,6 +145,11 @@
           "id": "label",
           "default": "Trust badge",
           "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Subtext (optional)"
         }
       ]
     }
