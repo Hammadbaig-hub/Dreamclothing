@@ -41,7 +41,7 @@
         "static_image_width": 1920,
         "static_image_height": 1080,
         "image_overlay_opacity": 30,
-        "image_height": "large",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "image_behavior": "ambient",
