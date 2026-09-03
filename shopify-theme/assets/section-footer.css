@@ -161,6 +161,17 @@
   opacity: 0.75;
 }
 
+.footer-block--brand .footer-block__heading {
+  white-space: nowrap;
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+@media screen and (min-width: 990px) {
+  .footer-block--brand .footer-block__heading {
+    font-size: calc(var(--font-heading-scale) * 1.6rem);
+  }
+}
+
 /* Three-column footer layout (links | policies | social + newsletter) */
 @media screen and (min-width: 990px) {
   .footer__content-top {
