@@ -219,10 +219,12 @@
         "button"
       ],
       "settings": {
+        "static_image": "our-story-1.jpg",
+        "static_image_alt": "Woman wearing a hand-embroidered red Pakistani outfit with gota work",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",

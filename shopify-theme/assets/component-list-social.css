@@ -30,3 +30,23 @@
 .list-social__link:hover .icon {
   transform: scale(1.07);
 }
+
+.list-social__item--facebook .list-social__link,
+.list-social__item--instagram .list-social__link {
+  color: #fff;
+  border-radius: 50%;
+  transition: transform 200ms ease;
+}
+
+.list-social__item--facebook .list-social__link {
+  background: #1877f2;
+}
+
+.list-social__item--instagram .list-social__link {
+  background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.list-social__item--facebook .list-social__link:hover,
+.list-social__item--instagram .list-social__link:hover {
+  transform: translateY(-0.2rem);
+}
