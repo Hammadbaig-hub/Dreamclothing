@@ -161,6 +161,49 @@
   opacity: 0.75;
 }
 
+/* Three-column footer layout (links | policies | social + newsletter) */
+@media screen and (min-width: 990px) {
+  .footer__content-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .footer__content-top .footer__blocks-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 2 1 0%;
+    margin-bottom: 0;
+    gap: 4rem;
+  }
+
+  .footer__content-top .footer-block--newsletter {
+    flex: 1 1 0%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 0;
+    gap: 2.4rem;
+  }
+
+  .footer__content-top .footer-block--newsletter .footer-block__newsletter,
+  .footer__content-top .footer-block--newsletter .footer__newsletter,
+  .footer__content-top .footer-block--newsletter .newsletter-form__field-wrapper {
+    text-align: left;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .footer__content-top .footer-block--menu {
+    text-align: left;
+  }
+
+  .footer__content-top .footer__list-social {
+    justify-content: flex-start;
+  }
+}
+
 @media screen and (min-width: 990px) {
   .footer-block__heading {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
