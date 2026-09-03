@@ -5,7 +5,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-5",
         "show_line_separator": false,
         "show_social": false,
         "auto_rotate": true,
@@ -19,7 +19,7 @@
           "settings": {
             "text": "Free Delivery All Over Pakistan",
             "text_alignment": "center",
-            "color_scheme": "scheme-4",
+            "color_scheme": "scheme-5",
             "link": ""
           }
         },
@@ -28,7 +28,7 @@
           "settings": {
             "text": "Cash On Delivery Available Nationwide",
             "text_alignment": "center",
-            "color_scheme": "scheme-4",
+            "color_scheme": "scheme-5",
             "link": ""
           }
         },
@@ -37,7 +37,7 @@
           "settings": {
             "text": "New Arrivals Just Dropped — Shop Now",
             "text_alignment": "center",
-            "color_scheme": "scheme-4",
+            "color_scheme": "scheme-5",
             "link": "shopify://collections/all"
           }
         },
@@ -46,7 +46,7 @@
           "settings": {
             "text": "100% Hand-Embroidered by Pakistani Artisans",
             "text_alignment": "center",
-            "color_scheme": "scheme-4",
+            "color_scheme": "scheme-5",
             "link": ""
           }
         }

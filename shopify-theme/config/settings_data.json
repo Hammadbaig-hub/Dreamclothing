@@ -40,11 +40,11 @@
         },
         "scheme-4": {
           "settings": {
-            "background": "#E1263C",
+            "background": "#9C3A4C",
             "background_gradient": "",
             "text": "#FFFFFF",
             "button": "#FFFFFF",
-            "button_label": "#E1263C",
+            "button_label": "#9C3A4C",
             "secondary_button_label": "#FFFFFF",
             "shadow": "#000000"
           }
@@ -70,10 +70,10 @@
       "spacing_grid_horizontal": 8,
       "spacing_grid_vertical": 8,
       "animations_reveal_on_scroll": true,
-      "animations_hover_elements": "vertical-lift",
+      "animations_hover_elements": "3d-lift",
       "buttons_border_thickness": 1,
       "buttons_border_opacity": 100,
-      "buttons_radius": 6,
+      "buttons_radius": 40,
       "buttons_shadow_opacity": 0,
       "buttons_shadow_horizontal_offset": 0,
       "buttons_shadow_vertical_offset": 4,
@@ -154,7 +154,7 @@
       "drawer_shadow_blur": 5,
       "badge_position": "bottom left",
       "badge_corner_radius": 40,
-      "sale_badge_color_scheme": "scheme-4",
+      "sale_badge_color_scheme": "scheme-5",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "Dream Clothing — Handmade Embroidery, Made in Pakistan",
       "brand_description": "<p>Authentic hand-embroidered women's wear, hand-crafted by skilled Pakistani artisans and delivered all over Pakistan.</p>",

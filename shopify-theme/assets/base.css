@@ -2974,7 +2974,7 @@ details-disclosure > details {
 
 .badge--sale-percent {
   font-weight: 700;
-  animation: badgePulse 1.8s ease-in-out infinite;
+  animation: badgePulse 2.6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2989,7 +2989,7 @@ details-disclosure > details {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.08);
+    transform: scale(1.04);
   }
 }
 
