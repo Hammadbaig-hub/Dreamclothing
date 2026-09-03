@@ -5,6 +5,12 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "brand": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": false
+          }
+        },
         "quick_links": {
           "type": "link_list",
           "settings": {
@@ -13,7 +19,7 @@
           }
         }
       },
-      "block_order": ["quick_links"],
+      "block_order": ["brand", "quick_links"],
       "settings": {
         "color_scheme": "scheme-2",
         "newsletter_enable": true,
