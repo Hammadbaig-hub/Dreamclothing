@@ -458,6 +458,17 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
+{%- assign social_candidates = settings.social_twitter_link | append: '|' | append: settings.social_facebook_link | append: '|' | append: settings.social_pinterest_link | append: '|' | append: settings.social_instagram_link | append: '|' | append: settings.social_tiktok_link | append: '|' | append: settings.social_tumblr_link | append: '|' | append: settings.social_snapchat_link | append: '|' | append: settings.social_youtube_link | append: '|' | append: settings.social_vimeo_link | split: '|' -%}
+{%- capture same_as_json -%}
+  {%- assign first_link = true -%}
+  {%- for link in social_candidates -%}
+    {%- if link contains 'http' -%}
+      {%- unless first_link -%},{%- endunless -%}
+      {{ link | json }}
+      {%- assign first_link = false -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -466,17 +477,7 @@
     {% if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
-    "sameAs": [
-      {{ settings.social_twitter_link | json }},
-      {{ settings.social_facebook_link | json }},
-      {{ settings.social_pinterest_link | json }},
-      {{ settings.social_instagram_link | json }},
-      {{ settings.social_tiktok_link | json }},
-      {{ settings.social_tumblr_link | json }},
-      {{ settings.social_snapchat_link | json }},
-      {{ settings.social_youtube_link | json }},
-      {{ settings.social_vimeo_link | json }}
-    ],
+    "sameAs": [{{ same_as_json }}],
     "url": {{ request.origin | append: page.url | json }}
   }
 </script>

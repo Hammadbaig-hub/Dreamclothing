@@ -51,7 +51,7 @@
                   {{
                     block.settings.avatar
                     | image_url: width: 96
-                    | image_tag: width: 48, height: 48, loading: 'lazy'
+                    | image_tag: width: 48, height: 48, loading: 'lazy', alt: block.settings.author_name | escape
                   }}
                 </div>
               {%- else -%}
