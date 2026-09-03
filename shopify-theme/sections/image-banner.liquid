@@ -83,8 +83,21 @@
       }}
     </div>
   {%- elsif section.settings.image_2 == blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank and section.settings.static_image == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {%- if section.settings.static_image != blank -%}
+        <img
+          src="{{ section.settings.static_image | asset_url }}"
+          alt="{{ section.settings.static_image_alt | default: section.settings.heading | escape }}"
+          width="{{ section.settings.static_image_width | default: 2000 }}"
+          height="{{ section.settings.static_image_height | default: 1116 }}"
+          loading="{% if section.index == 1 %}eager{% else %}lazy{% endif %}"
+          {% if section.index == 1 %}
+            fetchpriority="high"
+          {% endif %}
+        >
+      {%- else -%}
+        {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
     </div>
   {%- endif -%}
   {%- if section.settings.image_2 != blank -%}
@@ -194,6 +207,28 @@
       "type": "image_picker",
       "id": "image_2",
       "label": "t:sections.image-banner.settings.image_2.label"
+    },
+    {
+      "type": "text",
+      "id": "static_image",
+      "label": "Fallback image (theme asset filename)",
+      "info": "Only used when no image is picked above. Filename of an image already uploaded to the theme's /assets folder, e.g. hero-embroidery-1.jpg"
+    },
+    {
+      "type": "text",
+      "id": "static_image_alt",
+      "label": "Fallback image alt text"
+    },
+    {
+      "type": "number",
+      "id": "static_image_width",
+      "label": "Fallback image width (px)",
+      "info": "Actual pixel width of the uploaded asset file, used to prevent layout shift."
+    },
+    {
+      "type": "number",
+      "id": "static_image_height",
+      "label": "Fallback image height (px)"
     },
     {
       "type": "range",

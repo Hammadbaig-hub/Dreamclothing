@@ -36,6 +36,8 @@
         "button"
       ],
       "settings": {
+        "static_image": "hero-embroidery-1.jpg",
+        "static_image_alt": "Hand-embroidered traditional blouse detail",
         "image_overlay_opacity": 50,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -272,7 +274,7 @@
         "email_form"
       ],
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
