@@ -330,6 +330,28 @@
   fill: #9c3a4c;
 }
 
+.card__wishlist-btn.is-popping {
+  animation: wishlistPop 420ms cubic-bezier(0.28, 1.4, 0.5, 1);
+}
+
+@keyframes wishlistPop {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card__wishlist-btn.is-popping {
+    animation: none;
+  }
+}
+
 .card__inner:not(.ratio) > .card__content {
   height: 100%;
 }

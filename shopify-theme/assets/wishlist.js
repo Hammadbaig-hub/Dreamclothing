@@ -50,6 +50,13 @@
 
     writeWishlist(ids);
     syncButton(button, ids);
+
+    if (index === -1) {
+      button.classList.remove('is-popping');
+      // eslint-disable-next-line no-unused-expressions
+      button.offsetWidth; /* restart animation */
+      button.classList.add('is-popping');
+    }
   });
 
   document.addEventListener('DOMContentLoaded', syncAllButtons);

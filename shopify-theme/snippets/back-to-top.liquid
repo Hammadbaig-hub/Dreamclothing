@@ -1,0 +1,11 @@
+{%- comment -%}
+  Floating "back to top" button. Fades in after the user scrolls past one
+  viewport height, smooth-scrolls to top on click. Rendered once globally.
+{%- endcomment -%}
+{{ 'component-back-to-top.css' | asset_url | stylesheet_tag }}
+
+<button type="button" id="BackToTop" class="back-to-top" aria-label="Back to top">
+  <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+</button>
+
+<script src="{{ 'back-to-top.js' | asset_url }}" defer="defer"></script>

@@ -2982,6 +2982,25 @@ details-disclosure > details {
   word-break: break-word;
 }
 
+#MainContent {
+  animation: pageFadeIn 400ms ease both;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #MainContent {
+    animation: none;
+  }
+}
+
 .badge--sale-percent {
   font-weight: 700;
   animation: badgePulse 2.6s ease-in-out infinite;
